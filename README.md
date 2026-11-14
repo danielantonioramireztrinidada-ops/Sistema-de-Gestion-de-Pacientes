@@ -48,7 +48,7 @@ dotnet run --project SistemaPacientes.API/SistemaPacientes.API.csproj --urls htt
 
 Cliente Blazor (puerto 5001):
 
-dotnet run --project SistemaPacientes.Client/SistemaPacientes.Client.csproj --urls http://0.0.0.0:5001
+dotnet run --project SistemaPacientes.Client/SistemaPacientes.Client.csproj --urls https://zany-robot-4q677r79jx99hqp-5001.app.github.dev/pacientes
 
 ## Compilar la solución
 
