@@ -1,0 +1,53 @@
+﻿
+@inherits LayoutComponentBase
+
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-icon">✚</span>
+            <div>
+                <h2>SaludPlus</h2>
+                <small>Gestión Médica</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <p class="menu-title">MENÚ PRINCIPAL</p>
+
+            <NavLink href="/" Match="NavLinkMatch.All" class="nav-link">
+                <span>▦</span> Panel principal
+            </NavLink>
+
+            <NavLink href="/pacientes" class="nav-link">
+                <span>♙</span> Pacientes
+            </NavLink>
+
+            <NavLink href="/medicos" class="nav-link">
+                <span>⚕</span> Médicos
+            </NavLink>
+
+            <NavLink href="/citas" class="nav-link">
+                <span>▣</span> Citas médicas
+            </NavLink>
+        </nav>
+
+        <div class="sidebar-footer">
+            Sistema de Gestión de Pacientes
+            <small>Versión 1.0</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div>
+                <h3>Centro Médico</h3>
+                <small>Administración del sistema</small>
+            </div>
+            <span class="status">● Sistema activo</span>
+        </header>
+
+        <section class="content-area">
+            @Body
+        </section>
+    </main>
+</div>
